@@ -25,6 +25,16 @@ Test "what-if" scenarios for your future results to see exactly what grades you 
 ![CGPA Simulator](./frontend/public/screenshots/cgpa4.png)
 *An interactive module where you can input prospective subjects (like ADA), credits, and expected grades. It provides a real-time "Simulation Result" showing your future Semester SGPA, Projected CGPA, and the exact point improvement expected.*
 
+### 📝 Notes Repository
+Keep your study materials organized in a sleek, searchable gallery.
+![Notes Gallery](./frontend/public/screenshots/notes-1.png)
+*A centralized vault for all your academic thoughts. Features include theme-based color coding for different subjects, a "Pinned" section for urgent exam notes, and an instant search bar to find content across your entire library.*
+
+### ✍️ Professional Note Editor
+A distraction-free writing environment tailored for students.
+![Note Editor](./frontend/public/screenshots/notes-2.png)
+*The creator suite where you can draft detailed notes, assign them to specific subjects, and choose from 6 professional color palettes to keep your workspace visually organized.*
+
 ### 🧠 Attendance Intelligence
 Advanced skip-probability logic helps you manage your schedule while maintaining the strict 75% university threshold.
 ![Skip Calculator](./frontend/public/screenshots/attendance-2.png)
@@ -45,18 +55,9 @@ Advanced skip-probability logic helps you manage your schedule while maintaining
 - **CGPA Simulator**: Pro-active tool to enter "what-if" grades and see their immediate impact on your cumulative average.
 
 ### 📝 Notes Repository
-- **Rich Organization**: Theme-based color coding with 6 professional palettes.
+- **Rich Organization**: Theme-based color coding with professional palettes.
 - **Instant Search**: Full-text search engine optimized for titles, content, and tags.
 - **Pinned Workspace**: Keep your most critical subjects or exam notes at the top.
-
----
-
-## 🖼️ Module Gallery
-
-| Attendance Logs | Note Editor | Note Gallery |
-| :---: | :---: | :---: |
-| ![Table](./frontend/public/screenshots/attendance-1.png) | ![Editor](./frontend/public/screenshots/notes-2.png) | ![Gallery](./frontend/public/screenshots/notes-1.png) |
-| **Subject Records**: Detailed list view of every class logged, including date-stamps and attendance category (Present/Absent/Medical). | **Rich Note Creation**: A distraction-free environment for organizing study material with color-coding and tag management. | **Notes Repository**: A visual grid of your study material, filterable by color, pinned status, or custom tags. |
 
 ---
 
