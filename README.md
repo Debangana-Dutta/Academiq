@@ -10,73 +10,64 @@ AcademiQ is a production-grade MERN stack application designed to help students 
 
 ## 📸 Visual Tour
 
-### ⚡ Intelligent Dashboard
-Get a bird's-eye view of your semester. This command center automatically flags subjects at risk so you can take action before it's too late.
+### ⚡ The Command Center (Dashboard)
+**Your academic life, at a glance.**
 ![Dashboard Overview](./frontend/public/screenshots/Dashboard.png)
-
-### 📊 Performance Analytics
-Visualize your SGPA trends with interactive charts and use the future-looking CGPA Simulator to project your final grades.
-![CGPA Trend](./frontend/public/screenshots/cgpa3.png)
+Stop juggling multiple apps. The AcademiQ Dashboard provides a high-fidelity summary of your semester. It automatically flags subjects at risk, tracks your recent notes, and calculates your cumulative attendance health in real-time so you stay ahead of the curve.
 
 ### 🧠 Attendance Intelligence
-Advanced skip-probability logic helps you manage your schedule while maintaining the strict 75% university threshold.
+**Master your schedule with mathematical precision.**
 ![Skip Calculator](./frontend/public/screenshots/attendance-2.png)
+Never stress about the 75% rule again. Our advanced "Skip-Logic" engine tells you exactly how many classes you can safely miss or how many consecutive classes you must attend to stay in the "Safe Zone." Data-driven freedom for the modern student.
 
----
+### 📊 CGPA Planner & Simulator
+**Predict your future, track your growth.**
+![CGPA Trend](./frontend/public/screenshots/cgpa3.png)
+Visualize your academic journey with interactive SGPA trend charts. Use our predictive simulator to input "what-if" grades for upcoming exams and see their immediate impact on your final degree percentage before you even sit for the test.
 
-## ✨ Features
-
-### 📋 Attendance Tracker
-- **Smart Skip Calculator**: Uses a custom algorithm to calculate exactly how many classes you can safely skip while staying above 75%.
-- **Must-Attend Counter**: Real-time recovery logic showing consecutive classes needed to return to "Safe" status.
-- **Visual Progress**: Color-coded enforcement (Safe / At Risk / Critical) with high-fidelity progress bars.
-- **Doughnut Analytics**: Subject-wise distribution overview for quick health checks.
-
-### 📊 CGPA Planner
-- **Grade Management**: Detailed subject-wise entry for completed semesters.
-- **Trend Analysis**: Bar charts visualizing your academic growth (SGPA) across your degree.
-- **CGPA Simulator**: Pro-active tool to enter "what-if" grades and see their immediate impact on your cumulative average.
-
-### 📝 Notes Repository
-- **Rich Organization**: Theme-based color coding with 6 professional palettes.
-- **Instant Search**: Full-text search engine optimized for titles, content, and tags.
-- **Pinned Workspace**: Keep your most critical subjects or exam notes at the top.
-
-### 🔐 Security & Engineering
-- **XSS/CSRF Protection**: JWT authentication via **HTTP-only cookies** and `SameSite: Strict` enforcement.
-- **Rate Limiting**: Security middleware to prevent brute-force attacks on auth and API routes.
-- **Data Integrity**: Input validation via `express-validator` and password hashing with `bcrypt` (12 salt rounds).
+### 📝 The Academic Vault (Notes)
+**Knowledge organized, effortlessly searchable.**
+![Notes Gallery](./frontend/public/screenshots/notes-1.png)
+A sleek, categorized repository for your study materials. With 6 professional color palettes, subject-wise tagging, and a "Pinned" workspace for high-priority exam notes, your intellectual property has never looked this organized.
 
 ---
 
 ## 🖼️ Module Gallery
+*A technical deep-dive into the sub-components.*
 
-| Attendance Logs | CGPA Simulator | Note Editor |
+| Attendance Logs | Note Editor | CGPA Semester Entry |
 | :---: | :---: | :---: |
-| ![Table](./frontend/public/screenshots/attendance-1.png) | ![Sim](./frontend/public/screenshots/cgpa4.png) | ![Editor](./frontend/public/screenshots/notes-2.png) |
+| ![Table](./frontend/public/screenshots/attendance-1.png) | ![Editor](./frontend/public/screenshots/notes-2.png) | ![Sem Entry](./frontend/public/screenshots/cgpa1.png) |
+| **History Tracking**: Detailed date-stamped logs of every class attended or missed. | **Rich Editor**: Distraction-free writing environment with subject-specific tagging. | **Grade Entry**: Streamlined interface for managing multi-semester results. |
+
+| SGPA Breakdown | Subject Details | Predictive Result |
+| :---: | :---: | :---: |
+| ![Breakdown](./frontend/public/screenshots/cgpa2.png) | ![Subject View](./frontend/public/screenshots/atttendance-3.png) | ![Sim](./frontend/public/screenshots/cgpa4.png) |
+| **Data Breakdown**: Granular view of performance metrics across your degree. | **Deep-Dive Logs**: Specific subject attendance trends and percentage health. | **Simulation Output**: Real-time projected CGPA and point-improvement metrics. |
+
+---
+
+## ✨ Core Features
+*   **Smart Skip Calculator**: Custom algorithms for attendance safety thresholds.
+*   **Must-Attend Counter**: Real-time recovery logic for "At Risk" subjects.
+*   **CGPA Simulator**: Predictive modeling for future academic results.
+*   **Rich Organization**: Searchable, color-coded notes vault with pinning.
+*   **Security First**: JWT authentication via HTTP-only cookies and XSS protection.
 
 ---
 
 ## 🛠 Tech Stack
-
 | Layer | Technology |
 |-------|-----------|
-| **Frontend** | React 18, Vite, Tailwind CSS, Framer-friendly animations |
-| **State** | React Context API (AuthContext + AcademicContext) |
+| **Frontend** | React 18, Vite, Tailwind CSS |
+| **State** | React Context API |
 | **Charts** | Chart.js + react-chartjs-2 |
-| **Icons** | Heroicons v2 |
 | **Backend** | Node.js, Express 4 |
 | **Database** | MongoDB Atlas + Mongoose |
-| **Auth** | JWT + HTTP-only cookies |
-| **Security** | Helmet, express-rate-limit, bcryptjs |
 
 ---
 
 ## 🚀 Getting Started
-
-### Prerequisites
-- Node.js ≥ 18.0
-- MongoDB Atlas account (for cloud database)
 
 ### 1. Clone & Install
 ```bash
@@ -85,11 +76,3 @@ cd academiq
 
 # Install all dependencies using the root script
 npm run install:all
-
-
-🧮 Attendance AlgorithmThe intelligence engine uses the following formulas to ensure academic compliance:$$Safe\ to\ Skip = \lfloor \frac{attended - (0.75 \times total)}{0.75} \rfloor$$$$Must\ Attend = \lceil \frac{(0.75 \times total) - attended}{0.25} \rceil$$
-
-📄 License
-MIT License — free for personal and commercial use.
-
-© 2026 AcademiQ • Crafted with 🤍 by Debangana Dutta
