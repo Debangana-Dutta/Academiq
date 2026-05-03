@@ -87,9 +87,3 @@ cd academiq
 npm run install:all
 
 
-🧮 Attendance AlgorithmThe intelligence engine uses the following formulas to ensure academic compliance:$$Safe\ to\ Skip = \lfloor \frac{attended - (0.75 \times total)}{0.75} \rfloor$$$$Must\ Attend = \lceil \frac{(0.75 \times total) - attended}{0.25} \rceil$$
-
-📄 License
-MIT License — free for personal and commercial use.
-
-© 2026 AcademiQ • Crafted with 🤍 by Debangana Dutta
