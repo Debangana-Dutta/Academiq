@@ -26,33 +26,44 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex font-sans antialiased">
       {/* Left — branding panel */}
       <div className="hidden lg:flex flex-col justify-between w-2/5 bg-gradient-to-br from-brand-600 via-brand-500 to-indigo-600 p-12">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-            <AcademicCapIcon className="w-6 h-6 text-white" />
+        <div className="space-y-1">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+              <AcademicCapIcon className="w-6 h-6 text-white" />
+            </div>
+            <span className="text-xl font-bold text-white tracking-tight">AcademiQ</span>
           </div>
-          <span className="text-xl font-bold text-white tracking-tight">AcademiQ</span>
+          <p className="text-blue-200/80 text-[10px] font-bold uppercase tracking-[0.2em] pl-1">
+            By Students, For Students
+          </p>
         </div>
+
         <div>
-          <blockquote className="text-white/90 text-2xl font-light leading-relaxed mb-6">
-            "Track every class, predict every grade,<br />ace every semester."
+          <blockquote className="text-white text-3xl font-bold leading-tight mb-8">
+            Track every class.<br />
+            Predict every grade.<br />
+            <span className="text-blue-200">Ace every semester.</span>
           </blockquote>
           <div className="grid grid-cols-3 gap-4">
             {[
-              { value: '75%', label: 'Smart Threshold' },
+              { value: '75%', label: 'Attendance' },
               { value: '10pt', label: 'CGPA Scale' },
-              { value: '∞', label: 'Note Storage' },
+              { value: '∞', label: 'Cloud Notes' },
             ].map(item => (
-              <div key={item.label} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div key={item.label} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/5">
                 <p className="text-2xl font-bold text-white">{item.value}</p>
-                <p className="text-xs text-white/70 font-medium mt-1">{item.label}</p>
+                <p className="text-[10px] text-white/70 font-bold uppercase tracking-wider mt-1">{item.label}</p>
               </div>
             ))}
           </div>
         </div>
-        <p className="text-white/40 text-sm">© {new Date().getFullYear()} AcademiQ. All rights reserved.</p>
+        
+        <p className="text-white/40 text-[9px] font-bold uppercase tracking-wider whitespace-nowrap">
+          © 2026 AcademiQ • Crafted with 🤍 by Debangana Dutta
+        </p>
       </div>
 
       {/* Right — form */}
@@ -66,17 +77,17 @@ export default function LoginPage() {
             <span className="text-lg font-bold text-slate-900">AcademiQ</span>
           </div>
 
-          <h2 className="text-2xl font-bold text-slate-900 mb-1">Welcome back</h2>
-          <p className="text-sm text-slate-500 mb-8">Sign in to your account to continue</p>
+          <h2 className="text-2xl font-bold text-slate-900 mb-1 text-left">Welcome back</h2>
+          <p className="text-sm text-slate-500 mb-8 text-left">Sign in to your account to continue</p>
 
           <form onSubmit={submit} className="space-y-4">
-            <div>
-              <label className="form-label">Email address</label>
+            <div className="text-left">
+              <label className="form-label block ml-1 mb-1 text-[11px] font-bold uppercase text-slate-500 tracking-wide">Email address</label>
               <input type="email" value={form.email} onChange={set('email')} required
                 className="form-input" placeholder="you@university.edu" autoComplete="email" />
             </div>
-            <div>
-              <label className="form-label">Password</label>
+            <div className="text-left">
+              <label className="form-label block ml-1 mb-1 text-[11px] font-bold uppercase text-slate-500 tracking-wide">Password</label>
               <div className="relative">
                 <input
                   type={showPwd ? 'text' : 'password'} value={form.password} onChange={set('password')} required
@@ -89,8 +100,8 @@ export default function LoginPage() {
               </div>
             </div>
 
-            <button type="submit" disabled={loading} className="btn-primary w-full justify-center py-3 mt-2">
-              {loading ? <><span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />Signing in...</> : 'Sign In'}
+            <button type="submit" disabled={loading} className="btn-primary w-full justify-center py-3 mt-2 font-bold uppercase tracking-widest text-xs shadow-md shadow-brand-500/20 active:scale-[0.98] transition-all">
+              {loading ? <><span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin mr-2" />Signing in...</> : 'Sign In'}
             </button>
           </form>
 
@@ -101,9 +112,14 @@ export default function LoginPage() {
 
           {/* Demo credentials hint */}
           <div className="mt-6 bg-brand-50 border border-brand-100 rounded-xl p-3.5 text-xs text-brand-700">
-            <p className="font-semibold mb-1">Demo credentials</p>
-            <p>Email: <span className="font-mono">demo@academiq.app</span></p>
-            <p>Password: <span className="font-mono">Demo@1234</span></p>
+            <p className="font-semibold mb-1 text-left flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-500" />
+              Quick Demo Access
+            </p>
+            <div className="text-left">
+              <p>Email: <span className="font-mono">demo@academiq.app</span></p>
+              <p>Password: <span className="font-mono">Demo@1234</span></p>
+            </div>
           </div>
         </div>
       </div>

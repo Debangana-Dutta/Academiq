@@ -38,18 +38,21 @@ function SemesterFormModal({ existing, onClose }) {
 
   return (
     <Modal isOpen onClose={onClose} title={existing ? `Edit Semester ${existing.semester}` : 'Add Semester'} size="lg">
-      <div className="space-y-4">
-        <div>
+      <div className="flex flex-col max-h-[80vh]">
+        {/* Semester Number Input - Fixed at top */}
+        <div className="pb-4 border-b border-slate-50 mb-4">
           <label className="form-label">Semester Number</label>
           <input type="number" min="1" max="12" value={semester} onChange={e => setSemester(e.target.value)}
             className="form-input w-32" placeholder="e.g. 3" disabled={!!existing} />
         </div>
 
-        <div>
-          <label className="form-label">Subjects</label>
-          <div className="space-y-2">
+        {/* Subjects List - SCROLLABLE AREA */}
+        <div className="flex-1 overflow-hidden flex flex-col">
+          <label className="form-label mb-2">Subjects</label>
+          
+          <div className="flex-1 overflow-y-auto pr-2 space-y-2 custom-scrollbar" style={{ maxHeight: '350px' }}>
             {subjects.map((s, i) => (
-              <div key={s.id} className="flex gap-2 items-center">
+              <div key={s.id} className="flex gap-2 items-center animate-fade-in">
                 <input placeholder={`Subject ${i + 1}`} value={s.subjectName}
                   onChange={e => updateRow(s.id, 'subjectName', e.target.value)}
                   className="form-input flex-1" />
@@ -61,19 +64,21 @@ function SemesterFormModal({ existing, onClose }) {
                   {GRADE_LABELS.map(g => <option key={g} value={gradeToPoint(g)}>{g} ({gradeToPoint(g)})</option>)}
                 </select>
                 {subjects.length > 1 && (
-                  <button onClick={() => removeRow(s.id)} className="btn-icon text-danger-400">
+                  <button onClick={() => removeRow(s.id)} className="btn-icon text-danger-400 hover:bg-danger-50">
                     <TrashIcon className="w-4 h-4" />
                   </button>
                 )}
               </div>
             ))}
           </div>
-          <button onClick={addRow} className="btn-ghost text-brand-600 hover:bg-brand-50 mt-2 text-sm">
+
+          <button onClick={addRow} className="btn-ghost text-brand-600 hover:bg-brand-50 mt-3 w-fit text-sm">
             <PlusIcon className="w-4 h-4" /> Add Subject
           </button>
         </div>
 
-        <div className="flex gap-3 pt-2 border-t border-slate-100">
+        {/* Action Buttons - Fixed at bottom */}
+        <div className="flex gap-3 pt-6 mt-4 border-t border-slate-100">
           <button onClick={onClose} className="btn-secondary flex-1">Cancel</button>
           <button onClick={save} disabled={saving} className="btn-primary flex-1">
             {saving ? 'Saving...' : 'Save Semester'}
@@ -109,13 +114,11 @@ export default function GradeCard({ entry, onDelete }) {
           </div>
         </div>
 
-        {/* SGPA display */}
         <div className="flex items-end gap-1 mb-3">
           <span className={`text-3xl font-bold tabular-nums ${sgpaColor}`}>{entry.sgpa?.toFixed(2)}</span>
           <span className="text-sm text-slate-400 mb-1 font-medium">SGPA</span>
         </div>
 
-        {/* Subject list */}
         <div className="space-y-1.5">
           {entry.subjects?.slice(0, 4).map((s, i) => (
             <div key={i} className="flex items-center justify-between">
