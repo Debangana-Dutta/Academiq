@@ -1,6 +1,6 @@
 # 🎓 AcademiQ — Student Productivity Suite
 
-A **production-grade MERN stack** web application built as a professional portfolio piece. AcademiQ helps students track attendance, plan CGPA, and manage notes — all in a sleek SaaS-style interface.
+A **production-grade MERN stack** web application built as a professional portfolio piece. AcademiQ helps students track attendance, plan CGPA, and manage notes, all in a sleek SaaS-style interface.
 
 ![AcademiQ Banner](https://via.placeholder.com/1200x400/6366f1/ffffff?text=AcademiQ+%E2%80%94+Student+Productivity+Suite)
 
