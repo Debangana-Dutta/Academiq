@@ -235,4 +235,4 @@ MIT License — free for personal and commercial use.
 
 ---
 
-Built with ❤️ as a full-stack portfolio project.
+© 2026 AcademiQ • Crafted with 🤍 by Debangana Dutta
