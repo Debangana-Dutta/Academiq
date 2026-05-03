@@ -20,12 +20,12 @@ Stop juggling multiple apps. The AcademiQ Dashboard provides a high-fidelity sum
 ![Attendance Intelligence Overview](./frontend/public/screenshots/atttendance-3.png)
 Never stress about the 75% rule again. Our advanced analytics engine provides a high-level overview of your semester intelligence, categorizing subjects into "Safe" and "At Risk" zones based on real-time data tracking. Data-driven freedom for the modern student.
 
-### 🔮 Predictive Attendance Result
-**See the future of your attendance before you skip.**
-![Predictive Attendance Result](./frontend/public/screenshots/attendance-2.png)
-Plan your breaks with confidence. Use the interactive skip-simulator to see exactly how your percentage will drop after missing a specific number of classes. It provides a real-time "After Skipping" calculation, ensuring you maintain your 75% threshold with no surprises.
+### 🔮 Predictive Results (CGPA Simulator)
+**See the future of your grades before you even sit for exams.**
+![CGPA Simulator Result](./frontend/public/screenshots/cgpa4.png)
+Take control of your academic destiny. This interactive module allows you to input prospective subjects, credits, and expected grades to instantly see their impact. It provides a real-time "Simulation Result" highlighting your Projected CGPA and the exact point improvement required to reach your goals.
 
-### 📊 CGPA Planner & Simulator
+### 📊 Performance Analytics
 **Predict your future, track your growth.**
 ![CGPA Trend](./frontend/public/screenshots/cgpa3.png)
 Visualize your academic journey with interactive SGPA trend charts. Use our predictive simulator to input "what-if" grades for upcoming exams and see their immediate impact on your final degree percentage before you even sit for the test.
@@ -45,10 +45,10 @@ A sleek, categorized repository for your study materials. With 6 professional co
 | ![Table](./frontend/public/screenshots/attendance-1.png) | ![Editor](./frontend/public/screenshots/notes-2.png) | ![Sem Entry](./frontend/public/screenshots/cgpa1.png) |
 | **History Tracking**: Detailed date-stamped logs of every class attended or missed. | **Rich Editor**: Distraction-free writing environment with subject-specific tagging. | **Grade Entry**: Streamlined interface for managing multi-semester results. |
 
-| SGPA Breakdown | Subject Details | Predictive CGPA |
+| SGPA Breakdown | Subject Details | Predictive Attendance |
 | :---: | :---: | :---: |
-| ![Breakdown](./frontend/public/screenshots/cgpa2.png) | ![Subject View](./frontend/public/screenshots/atttendance-3.png) | ![Sim](./frontend/public/screenshots/cgpa4.png) |
-| **Data Breakdown**: Granular view of performance metrics across your degree. | **Deep-Dive Logs**: Specific subject attendance trends and percentage health. | **Simulation Output**: Real-time projected CGPA and point-improvement metrics. |
+| ![Breakdown](./frontend/public/screenshots/cgpa2.png) | ![Subject View](./frontend/public/screenshots/atttendance-3.png) | ![Sim](./frontend/public/screenshots/attendance-2.png) |
+| **Data Breakdown**: Granular view of performance metrics across your degree. | **Deep-Dive Logs**: Specific subject attendance trends and percentage health. | **Skip Calculation**: Real-time impact analysis for missing upcoming classes. |
 
 ---
 
