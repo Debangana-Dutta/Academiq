@@ -17,8 +17,8 @@ Stop juggling multiple apps. The AcademiQ Dashboard provides a high-fidelity sum
 
 ### 🧠 Attendance Intelligence
 **Master your schedule with mathematical precision.**
-![Skip Calculator Overview](./frontend/public/screenshots/attendance-2.png)
-Never stress about the 75% rule again. Our advanced "Skip-Logic" engine tells you exactly how many classes you can safely miss or how many consecutive classes you must attend to stay in the "Safe Zone." Data-driven freedom for the modern student.
+![Attendance Intelligence Overview](./frontend/public/screenshots/atttendance-3.png)
+Never stress about the 75% rule again. Our advanced analytics engine provides a high-level overview of your semester intelligence, categorizing subjects into "Safe" and "At Risk" zones based on real-time data tracking. Data-driven freedom for the modern student.
 
 ### 🔮 Predictive Attendance Result
 **See the future of your attendance before you skip.**
