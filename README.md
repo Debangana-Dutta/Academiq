@@ -25,20 +25,19 @@ Test "what-if" scenarios for your future results to see exactly what grades you 
 ![CGPA Simulator](./frontend/public/screenshots/cgpa4.png)
 *An interactive module where you can input prospective subjects (like ADA), credits, and expected grades. It provides a real-time "Simulation Result" showing your future Semester SGPA, Projected CGPA, and the exact point improvement expected.*
 
-### 📝 Notes Repository
-Keep your study materials organized in a sleek, searchable gallery.
-![Notes Gallery](./frontend/public/screenshots/notes-1.png)
-*A centralized vault for all your academic thoughts. Features include theme-based color coding for different subjects, a "Pinned" section for urgent exam notes, and an instant search bar to find content across your entire library.*
+---
 
-### ✍️ Professional Note Editor
-A distraction-free writing environment tailored for students.
-![Note Editor](./frontend/public/screenshots/notes-2.png)
-*The creator suite where you can draft detailed notes, assign them to specific subjects, and choose from 6 professional color palettes to keep your workspace visually organized.*
+## 🖼️ Module Gallery
 
-### 🧠 Attendance Intelligence
-Advanced skip-probability logic helps you manage your schedule while maintaining the strict 75% university threshold.
-![Skip Calculator](./frontend/public/screenshots/attendance-2.png)
-*The smart engine that calculates "Safe-to-Skip" counts and "Must-Attend" recovery streaks, ensuring you never fall below mandatory attendance requirements.*
+| Attendance Intelligence | Attendance Logs | Note Gallery |
+| :---: | :---: | :---: |
+| ![Skip Calculator](./frontend/public/screenshots/attendance-2.png) | ![Table](./frontend/public/screenshots/attendance-1.png) | ![Gallery](./frontend/public/screenshots/notes-1.png) |
+| **Skip Calculator**: The smart engine calculating "Safe-to-Skip" counts and "Must-Attend" recovery streaks to maintain the 75% threshold. | **Attendance Logs**: A detailed subject-wise history of every class attended, absent, or marked as medical leave. | **Notes Vault**: A visual grid of study materials with instant search, pinning capabilities, and color-coded categorization. |
+
+| Note Editor | CGPA Semester Entry | SGPA Breakdown | Subject Details |
+| :---: | :---: | :---: | :---: |
+| ![Editor](./frontend/public/screenshots/notes-2.png) | ![Sem Entry](./frontend/public/screenshots/cgpa1.png) | ![Breakdown](./frontend/public/screenshots/cgpa2.png) | ![Subject View](./frontend/public/screenshots/atttendance-3.png) |
+| **Rich Editor**: A distraction-free environment for drafting notes with 6 professional palettes and tag management. | **Grade Entry**: A streamlined form to input semester-specific results and credit weights for accurate calculation. | **SGPA Analysis**: A breakdown of performance metrics across different semesters to identify academic strengths. | **Deep-Dive Logs**: An expanded view of individual subject attendance records and percentage trends. |
 
 ---
 
