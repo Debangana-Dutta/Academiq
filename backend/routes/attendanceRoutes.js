@@ -1,0 +1,10 @@
+import express from 'express';
+import { getAllAttendance, logAttendance, setManualAttendance, getAttendanceSummary } from '../controllers/attendanceController.js';
+import { protect } from '../middleware/authMiddleware.js';
+const router = express.Router();
+router.use(protect);
+router.get('/', getAllAttendance);
+router.get('/summary', getAttendanceSummary);
+router.post('/log', logAttendance);
+router.put('/:subjectId/manual', setManualAttendance);
+export default router;

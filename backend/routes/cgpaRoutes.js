@@ -1,0 +1,10 @@
+import express from 'express';
+import { getCGPAData, addOrUpdateSemester, deleteSemester, simulateCGPA } from '../controllers/cgpaController.js';
+import { protect } from '../middleware/authMiddleware.js';
+const router = express.Router();
+router.use(protect);
+router.get('/', getCGPAData);
+router.post('/semester', addOrUpdateSemester);
+router.post('/simulate', simulateCGPA);
+router.delete('/semester/:semester', deleteSemester);
+export default router;
