@@ -17,8 +17,13 @@ Stop juggling multiple apps. The AcademiQ Dashboard provides a high-fidelity sum
 
 ### 🧠 Attendance Intelligence
 **Master your schedule with mathematical precision.**
-![Skip Calculator](./frontend/public/screenshots/attendance-2.png)
+![Skip Calculator Overview](./frontend/public/screenshots/attendance-2.png)
 Never stress about the 75% rule again. Our advanced "Skip-Logic" engine tells you exactly how many classes you can safely miss or how many consecutive classes you must attend to stay in the "Safe Zone." Data-driven freedom for the modern student.
+
+### 🔮 Predictive Attendance Result
+**See the future of your attendance before you skip.**
+![Predictive Attendance Result](./frontend/public/screenshots/attendance-2.png)
+Plan your breaks with confidence. Use the interactive skip-simulator to see exactly how your percentage will drop after missing a specific number of classes. It provides a real-time "After Skipping" calculation, ensuring you maintain your 75% threshold with no surprises.
 
 ### 📊 CGPA Planner & Simulator
 **Predict your future, track your growth.**
@@ -40,7 +45,7 @@ A sleek, categorized repository for your study materials. With 6 professional co
 | ![Table](./frontend/public/screenshots/attendance-1.png) | ![Editor](./frontend/public/screenshots/notes-2.png) | ![Sem Entry](./frontend/public/screenshots/cgpa1.png) |
 | **History Tracking**: Detailed date-stamped logs of every class attended or missed. | **Rich Editor**: Distraction-free writing environment with subject-specific tagging. | **Grade Entry**: Streamlined interface for managing multi-semester results. |
 
-| SGPA Breakdown | Subject Details | Predictive Result |
+| SGPA Breakdown | Subject Details | Predictive CGPA |
 | :---: | :---: | :---: |
 | ![Breakdown](./frontend/public/screenshots/cgpa2.png) | ![Subject View](./frontend/public/screenshots/atttendance-3.png) | ![Sim](./frontend/public/screenshots/cgpa4.png) |
 | **Data Breakdown**: Granular view of performance metrics across your degree. | **Deep-Dive Logs**: Specific subject attendance trends and percentage health. | **Simulation Output**: Real-time projected CGPA and point-improvement metrics. |
@@ -49,8 +54,8 @@ A sleek, categorized repository for your study materials. With 6 professional co
 
 ## ✨ Core Features
 *   **Smart Skip Calculator**: Custom algorithms for attendance safety thresholds.
+*   **Predictive Simulation**: Real-time impact analysis for both attendance and CGPA.
 *   **Must-Attend Counter**: Real-time recovery logic for "At Risk" subjects.
-*   **CGPA Simulator**: Predictive modeling for future academic results.
 *   **Rich Organization**: Searchable, color-coded notes vault with pinning.
 *   **Security First**: JWT authentication via HTTP-only cookies and XSS protection.
 
