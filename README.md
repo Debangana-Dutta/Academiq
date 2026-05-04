@@ -2,7 +2,7 @@
 ### The Ultimate Student Command Center
 *By Students, For Students*
 
-![AcademiQ Banner](./frontend/public/screenshots/banner.png)
+![AcademiQ Banner](./frontend/public/screenshots/banner.png) 
 
 AcademiQ is a production-grade MERN stack application designed to help students navigate university life with data-driven precision. From attendance skip-logic to interactive CGPA simulation, it serves as the ultimate workspace for academic excellence.
 
