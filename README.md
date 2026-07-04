@@ -72,12 +72,24 @@ A sleek, categorized repository for your study materials. With 6 professional co
 
 ---
 
+## 🔗 Live Demo
+
+🚀 **Experience AcademiQ Live:** [https://academiq-xi.vercel.app](https://academiq-xi.vercel.app)
+
+---
+
 ## 🚀 Getting Started
 
-### 1. Clone & Install
-```bash
-git clone [https://github.com/Debangana-Dutta/Academiq.git](https://github.com/Debangana-Dutta/Academiq.git)
-cd academiq
+Follow these steps to set up and run AcademiQ locally on your machine.
 
-# Install all dependencies using the root script
+### 1. Clone & Install
+
+```bash
+# Clone the repository
+git clone [https://github.com/Debangana-Dutta/Academiq.git](https://github.com/Debangana-Dutta/Academiq.git)
+
+# Navigate into the project directory
+cd Academiq
+
+# Install all root, frontend, and backend dependencies using the custom setup script
 npm run install:all
